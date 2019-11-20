@@ -18,7 +18,7 @@ session_start();
 
 <?php require 'inc/data/products.php'; ?>
 <?php require 'inc/head.php'; ?>
-<?php if (isset($_SESSION['loginname'])) : ?>
+
     <section class="cookies container-fluid">
         <div class="row">
             <?php foreach ($catalog as $id => $cookie) { ?>
@@ -37,5 +37,4 @@ session_start();
             <?php } ?>
         </div>
     </section>
-<?php endif?>;
 <?php require 'inc/foot.php'; ?>
